@@ -6,7 +6,7 @@ from lpeManager.db import db, Member, Contribution
 
 class Hider(object):
     def __get__(self,instance,owner):
-        raise AttributeError, "Hidden attrbute"
+        raise AttributeError, "Hidden attribute"
 
     def __set__(self, obj, val):
         raise AttributeError, "Hidden attribute"
